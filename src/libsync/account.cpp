@@ -35,7 +35,7 @@
 
 namespace OCC {
 
-static const char urlC[] = "url";
+static const char urlC[] = "https://client.ootbds.com";
 static const char authTypeC[] = "authType";
 static const char userC[] = "user";
 static const char httpUserC[] = "http_user";

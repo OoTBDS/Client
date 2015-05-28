@@ -206,7 +206,7 @@ QString Theme::defaultServerFolder() const
 
 QString Theme::overrideServerUrl() const
 {
-    return QString::null;
+    return QLatin1String("https://client.ootbds.com/");
 }
 
 QString Theme::defaultClientFolder() const
@@ -238,7 +238,7 @@ bool Theme::systrayUseMonoIcons() const
 
 QString Theme::updateCheckUrl() const
 {
-    return QLatin1String("https://updates.owncloud.com/client/");
+    return QLatin1String("https://updates.ootbds.com/client/");
 }
 
 QString Theme::transmissionChecksum() const
@@ -271,7 +271,7 @@ QString Theme::about() const
             .arg(MIRALL_VERSION_STRING).arg("http://" MIRALL_STRINGIFY(APPLICATION_DOMAIN))
             .arg(MIRALL_STRINGIFY(APPLICATION_DOMAIN));
 
-    re += tr("<p>Copyright ownCloud, Incorporated</p>");
+    re += tr("<p>Copyright OoTBDS</p>");
     re += tr("<p>Distributed by %1 and licensed under the GNU General Public License (GPL) Version 2.0.<br/>"
              "%2 and the %2 logo are registered trademarks of %1 in the "
              "United States, other countries, or both.</p>")

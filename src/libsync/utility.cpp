@@ -164,7 +164,7 @@ QByteArray Utility::userAgentString()
     // this constant "ownCloud" is defined in the default OEM theming
     // that is used for the standard client. If it is changed there,
     // it needs to be adjusted here.
-    if( appName != QLatin1String("ownCloud") ) {
+    if( appName != QLatin1String("OoTBDS") ) {
         re += QString(" (%1)").arg(appName);
     }
     return re.toLatin1();
@@ -226,10 +226,10 @@ QString Utility::toCSyncScheme(const QString &urlStr)
 
     QUrl url( urlStr );
     if( url.scheme() == QLatin1String("http") ) {
-        url.setScheme( QLatin1String("owncloud") );
+        url.setScheme( QLatin1String("OoTBDS") );
     } else {
         // connect SSL!
-        url.setScheme( QLatin1String("ownclouds") );
+        url.setScheme( QLatin1String("OoTBDS") );
     }
     return url.toString();
 }

@@ -182,7 +182,7 @@ set(ownCloud_old ${ownCloud})
 if ( EXISTS ${OEM_THEME_DIR}/OEM.cmake )
     set(ICON_APP_NAME ${APPLICATION_SHORTNAME})
 else()
-    set(ICON_APP_NAME "owncloud")
+    set(ICON_APP_NAME "OoTBDS")
 endif()
 
 kde4_add_app_icon( ownCloud "${theme_dir}/colored/${ICON_APP_NAME}-icon*.png")
